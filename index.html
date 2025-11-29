@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTubeDL - Coming Soon</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-color: #f8f9fa;
+        }
+        
+        body {
+            background: var(--primary-gradient);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .coming-soon-container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo {
+            font-size: 4rem;
+            font-weight: 800;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+        
+        .status-dot {
+            height: 15px;
+            width: 15px;
+            background-color: #28a745;
+            border-radius: 50%;
+            display: inline-block;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(0.95); opacity: 0.7; }
+            50% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(0.95); opacity: 0.7; }
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .social-links a {
+            transition: transform 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="d-flex align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="coming-soon-container p-5 my-5 text-center">
+                    <!-- Логотип -->
+                    <div class="logo">
+                        <i class="fab fa-youtube me-3"></i>MyTubeDL
+                    </div>
+                    
+                    <!-- Заголовок -->
+                    <h1 class="display-5 fw-bold mb-4">Welcome to MyTubeDL!</h1>
+                    
+                    <!-- Текст о разработке -->
+                    <div class="alert alert-info d-inline-flex align-items-center mb-4">
+                        <span class="status-dot me-2"></span>
+                        <span>Website is under development</span>
+                    </div>
+                    
+                    <p class="lead mb-5">
+                        We're working hard to bring you an amazing video download experience. 
+                        Stay tuned for something great!
+                    </p>
+                    
+                    <!-- Блок с фичами -->
+                    <div class="row text-start mb-5">
+                        <div class="col-md-4 mb-4">
+                            <div class="text-center">
+                                <i class="fas fa-bolt feature-icon"></i>
+                                <h5>Fast</h5>
+                                <p class="small">Lightning quick downloads</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="text-center">
+                                <i class="fas fa-shield-alt feature-icon"></i>
+                                <h5>Secure</h5>
+                                <p class="small">Safe and protected</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="text-center">
+                                <i class="fas fa-heart feature-icon"></i>
+                                <h5>Easy</h5>
+                                <p class="small">User-friendly interface</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Социальные сети -->
+                    <div class="social-links mt-4">
+                        <a href="https://github.com/GVCoder09/MyTubeDL" class="btn btn-outline-dark btn-lg mx-2">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- Прогресс бар -->
+                    <div class="mt-5">
+                        <p class="small text-muted mb-2">Development Progress</p>
+                        <div class="progress" style="height: 8px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" 
+                                 style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
